@@ -32,4 +32,26 @@ const theme = createMuiTheme({
         }
     },
 });
+theme.typography.h3 = {
+    [theme.breakpoints.up('xs')]: {
+        fontSize: '2.2rem',
+    },
+    [theme.breakpoints.up('sm')]: {
+        fontSize: '4rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '4.5rem',
+    },
+    [theme.breakpoints.up('lg')]: {
+        fontSize: '5rem',
+    }
+};
+theme.typography.h6 = {
+    [theme.breakpoints.up('xs')]: {
+        fontSize: '1rem',
+    },
+    [theme.breakpoints.up('sm')]: {
+        fontSize: '1.25rem',
+    }
+};
 export default theme;
