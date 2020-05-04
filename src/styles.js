@@ -2,13 +2,13 @@ import {makeStyles} from "@material-ui/core/styles";
 
 export const styles = makeStyles((theme) => ({
         heroContent: {
-            padding: theme.spacing(16, 0, 16),
+            padding: theme.spacing(8, 0, 8),
             marginTop: '64px',
             [theme.breakpoints.down('sm')]: {
                 marginTop: '56px',
             },
             backgroundColor: "#edf1f1",
-            height: '50vh',
+            height: '60vh',
             display: "flex",
             flexDirection: "column",
             justifyContent: "center"
@@ -25,13 +25,20 @@ export const styles = makeStyles((theme) => ({
             flexGrow: 1,
         },
         fabbyAppBarLink: {
-            fontFamily: 'Michroma, sans-serif !important',
-
+            fontSize: "1rem !Important"
         },
         fabbyAvatar: {
             marginRight: theme.spacing(2),
         },
-        fabbyHeading: {
+        fabbyHeadingHero: {
+            fontFamily: 'Michroma, sans-serif !important',
+            letterSpacing: '-1.5px',
+            lineHeight: '90px !important',
+            [theme.breakpoints.down('sm')]: {
+                lineHeight: 'initial !important',
+            },
+        },
+        fabbyHeadingSection: {
             fontFamily: 'Michroma, sans-serif !important',
             letterSpacing: '-1.5px',
             lineHeight: '90px !important',
@@ -49,5 +56,12 @@ export const styles = makeStyles((theme) => ({
                 paddingBottom: theme.spacing(6),
             },
         },
+        fabbyMainHeroImage: {
+            width: '300px',
+            [theme.breakpoints.up('xs')]: {
+                width: '170px',
+            },
+        },
+
     }))
 ;

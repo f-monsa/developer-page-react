@@ -28,13 +28,14 @@ const theme = createMuiTheme({
             '"Segoe UI Symbol"',
         ].join(','),
         button: {
-            textTransform: 'none',
+
+            fontWeight: '500',
         }
     },
 });
 theme.typography.h3 = {
     [theme.breakpoints.up('xs')]: {
-        fontSize: '2.2rem',
+        fontSize: '2.1rem',
     },
     [theme.breakpoints.up('sm')]: {
         fontSize: '4rem',
