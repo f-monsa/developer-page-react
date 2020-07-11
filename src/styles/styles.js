@@ -5,10 +5,11 @@ export const styles = makeStyles((theme) => ({
             padding: theme.spacing(8, 0, 8),
             marginTop: '64px',
             [theme.breakpoints.down('sm')]: {
+                // marginTop: '0px',
                 marginTop: '56px',
             },
             backgroundColor: "#edf1f1",
-            height: '60vh',
+            height: '65vh',
             display: "flex",
             flexDirection: "column",
             justifyContent: "center"
@@ -51,9 +52,10 @@ export const styles = makeStyles((theme) => ({
             marginTop: theme.spacing(8),
             paddingTop: theme.spacing(3),
             paddingBottom: theme.spacing(3),
-            [theme.breakpoints.up('sm')]: {
+            [theme.breakpoints.down('sm')]: {
                 paddingTop: theme.spacing(6),
                 paddingBottom: theme.spacing(6),
+                marginBottom: '56px',
             },
         },
         fabbyMainHeroImage: {
@@ -62,6 +64,8 @@ export const styles = makeStyles((theme) => ({
                 width: '170px',
             },
         },
-
+        fabbyProjectImage: {
+            maxWidth:"900px",
+        },
     }))
 ;

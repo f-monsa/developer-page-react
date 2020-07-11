@@ -15,7 +15,7 @@ const theme = createMuiTheme({
     },
     typography: {
         fontFamily: [
-            '"PT Sans"',
+            '"Public Sans"',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
@@ -27,13 +27,23 @@ const theme = createMuiTheme({
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"',
         ].join(','),
+        h1: {
+            fontFamily: 'Michroma, sans-serif !important',
+        },
+        h2: {
+            fontFamily: 'Michroma, sans-serif !important',
+        },
+        h3: {
+            fontFamily: 'Michroma, sans-serif !important',
+        },
         button: {
 
             fontWeight: '500',
         }
     },
 });
-theme.typography.h3 = {
+theme.typography.h1 = {
+    fontFamily: 'Michroma, sans-serif !important',
     [theme.breakpoints.up('xs')]: {
         fontSize: '2.1rem',
     },
@@ -47,7 +57,24 @@ theme.typography.h3 = {
         fontSize: '5rem',
     }
 };
+
+theme.typography.h3 = {
+    fontFamily: 'Michroma, sans-serif !important',
+    [theme.breakpoints.up('xs')]: {
+        fontSize: '2rem',
+    },
+    [theme.breakpoints.up('sm')]: {
+        fontSize: '3rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '3rem',
+    },
+    [theme.breakpoints.up('lg')]: {
+        fontSize: '3rem',
+    }
+};
 theme.typography.h6 = {
+    fontFamily: 'Michroma, sans-serif !important',
     [theme.breakpoints.up('xs')]: {
         fontSize: '1rem',
     },
