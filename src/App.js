@@ -1,6 +1,6 @@
-import React from 'react';
-import theme from './styles/fabby-theme.js';
-import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import theme from "./styles/fabby-theme.js";
+import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -8,55 +8,56 @@ import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
-import SvgIcon from '@material-ui/core/SvgIcon';
-import Work from './components/work/Work';
-import About from './components/About';
+import SvgIcon from "@material-ui/core/SvgIcon";
+import Icon from "@material-ui/core/Icon";
+import Work from "./components/work/Work";
+import About from "./components/About";
 
 const useStyles = makeStyles((theme) => ({
     heroContent: {
         padding: theme.spacing(8, 0, 8),
-        marginTop: '64px',
-        [theme.breakpoints.down('sm')]: {
+        marginTop: "64px",
+        [theme.breakpoints.down("sm")]: {
             // marginTop: '0px',
-            marginTop: '56px',
+            marginTop: "56px",
         },
         backgroundColor: "#edf1f1",
-        height: '65vh',
+        height: "65vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     fabbySection: {
         padding: theme.spacing(16, 0, 16),
-        height: '50vh',
+        height: "50vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     fabbyAppBar: {
         backgroundColor: "#edf1f1 !important",
         flexGrow: 1,
     },
     fabbyAppBarLink: {
-        fontSize: "1rem !Important"
+        fontSize: "1rem !Important",
     },
     fabbyAvatar: {
         marginRight: theme.spacing(2),
     },
     fabbyHeadingHero: {
-        fontFamily: 'Michroma, sans-serif !important',
-        letterSpacing: '-1.5px',
-        lineHeight: '90px !important',
-        [theme.breakpoints.down('sm')]: {
-            lineHeight: 'initial !important',
+        fontFamily: "Michroma, sans-serif !important",
+        letterSpacing: "-1.5px",
+        lineHeight: "90px !important",
+        [theme.breakpoints.down("sm")]: {
+            lineHeight: "initial !important",
         },
     },
     fabbyHeadingSection: {
-        fontFamily: 'Michroma, sans-serif !important',
-        letterSpacing: '-1.5px',
-        lineHeight: '90px !important',
-        [theme.breakpoints.down('sm')]: {
-            lineHeight: 'initial !important',
+        fontFamily: "Michroma, sans-serif !important",
+        letterSpacing: "-1.5px",
+        lineHeight: "90px !important",
+        [theme.breakpoints.down("sm")]: {
+            lineHeight: "initial !important",
         },
     },
     fabbyFooter: {
@@ -64,20 +65,23 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(8),
         paddingTop: theme.spacing(3),
         paddingBottom: theme.spacing(3),
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down("sm")]: {
             paddingTop: theme.spacing(6),
             paddingBottom: theme.spacing(6),
-            marginBottom: '56px',
+            marginBottom: "56px",
         },
     },
     fabbyMainHeroImage: {
-        width: '300px',
-        [theme.breakpoints.up('xs')]: {
-            width: '170px',
+        width: "250px",
+        [theme.breakpoints.down("sm")]: {
+            width: "200px",
+        },
+        [theme.breakpoints.down("xs")]: {
+            width: "170px",
         },
     },
     fabbyProjectImage: {
-        maxWidth:"900px",
+        maxWidth: "900px",
     },
 }));
 
@@ -87,18 +91,24 @@ function App() {
     return (
         <div className="App">
             <ThemeProvider theme={theme}>
-                <AppBar className={classes.fabbyAppBar} position="fixed" elevation={0}>
+                <AppBar
+                    className={classes.fabbyAppBar}
+                    position="fixed"
+                    elevation={0}
+                >
                     <Container maxWidth="md">
                         <Toolbar disableGutters={true}>
-                            <Grid justify="space-between" alignItems="center" container>
+                            <Grid
+                                justify="space-between"
+                                alignItems="center"
+                                container
+                            >
                                 <Grid item>
-                                    <Button fontWeight={"600"} className={classes.fabbyAppBarLink}>
+                                    <Button
+                                        fontWeight={"600"}
+                                        className={classes.fabbyAppBarLink}
+                                    >
                                         Work
-                                    </Button>
-                                </Grid>
-                                <Grid item>
-                                    <Button className={classes.fabbyAppBarLink}>
-                                        About
                                     </Button>
                                 </Grid>
                                 <Grid item>
@@ -143,12 +153,27 @@ function App() {
                     <Container maxWidth="lg">
                         <Grid container spacing={3} justify="center">
                             <Grid item xs={12} sm={12} md={9}>
-                                <img className={classes.fabbyMainHeroImage} src="/images/open-doodles-chilling.png" alt="" />
-                                <Typography className={classes.fabbyHeadingHero} variant="h1" align="left" color="textPrimary" gutterBottom>
+                                <img
+                                    className={classes.fabbyMainHeroImage}
+                                    src="/images/open-doodles-chilling.png"
+                                    alt=""
+                                />
+                                <Typography
+                                    className={classes.fabbyHeadingHero}
+                                    variant="h1"
+                                    align="left"
+                                    color="textPrimary"
+                                    gutterBottom
+                                >
                                     Fabby's developer page
                                 </Typography>
-                                <Typography variant="body1" align="left" paragraph>
-                                    Hello! My name is Fabio and welcome to my personal/portfolio website.
+                                <Typography
+                                    variant="body1"
+                                    align="left"
+                                    paragraph
+                                >
+                                    Hello! My name is Fabio and welcome to my
+                                    personal/portfolio website.
                                 </Typography>
                             </Grid>
                         </Grid>
